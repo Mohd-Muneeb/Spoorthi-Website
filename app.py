@@ -228,5 +228,5 @@ def logout():
     logout_user()
     return redirect(url_for("home"))
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == "__app__":
+    app.run(debug=False, host="localhost", port=8080)
